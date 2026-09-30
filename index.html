@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Montessori | App Educativa de Lectoescritura Infantil</title>
+
+  <meta name="description"
+    content="Mi Montessori es una aplicación educativa en español para acompañar a los niños en el aprendizaje de letras, sílabas, palabras y frases con actividades visuales, auditivas y pictogramas de ARASAAC. Sin anuncios y sin registros.">
+  <meta name="keywords"
+    content="Montessori, educación infantil, lectoescritura, aprender a leer, ARASAAC, pictogramas, fonética, trazos, niños, app educativa">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mi Montessori | Aprende a leer y escribir con el método Montessori">
+  <meta property="og:description"
+    content="Actividades interactivas de letras, sílabas, trazos y reconocimiento de voz con pictogramas de ARASAAC. 100% libre de publicidad.">
+  <meta property="og:image" content="assets/images/banner-collage.png">
+
+  <!-- Favicon con la abejita mascota -->
+  <link rel="icon" type="image/png" href="assets/images/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/images/app-icon.png">
+
+  <!-- Google Fonts: Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       HEADER / NAVBAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-link" aria-label="Ir al inicio de Mi Montessori">
+        <img src="assets/images/app-icon.png" alt="Icono de abeja de Mi Montessori" class="brand-icon" width="52"
+          height="52">
+        <div class="brand-text">
+          <span class="brand-title">Mi <span>Montessori</span></span>
+          <span class="brand-subtitle">Lectoescritura Infantil</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#metodologia" class="nav-link">Metodología</a></li>
+          <li><a href="#areas" class="nav-link">Áreas de la App</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="#para-quien" class="nav-link">¿Para quién es?</a></li>
+          <li><a href="#privacidad" class="nav-link">Privacidad</a></li>
+          <li><a href="#donaciones" class="nav-link">Apoyar</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-header-play js-open-notify-modal"
+          aria-label="Avisarme del lanzamiento en Google Play">
+          <span>Próximamente en Google Play</span>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú de navegación">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <img src="assets/images/app-icon.png" alt="Abejita" width="22" height="22">
+            <span>Aprendizaje temprano respetuoso y autónomo</span>
+          </div>
+
+          <h1 class="hero-title">
+            Aprende a leer y escribir <br>
+            <span class="highlight-blue">al ritmo natural</span> de <span class="highlight-purple">cada niño</span>.
+          </h1>
+
+          <p class="hero-description">
+            <strong>Mi Montessori</strong> es una aplicación educativa en español diseñada para acompañar la iniciación
+            en la lectoescritura mediante actividades visuales, auditivas y motrices inspiradas en la filosofía
+            Montessori y potenciadas con <strong>pictogramas de ARASAAC</strong>.
+          </p>
+
+          <div class="hero-ctas">
+            <!-- Botón estilo Google Play Store -->
+            <button type="button" class="playstore-badge-btn js-open-notify-modal"
+              aria-label="Pre-registro en Google Play Store">
+              <svg class="playstore-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.609 1.814L13.792 12 3.61 22.186c-.368-.383-.61-.95-.61-1.635V3.45c0-.686.242-1.253.61-1.636z"
+                  fill="#00e5ff" />
+                <path d="M17.186 8.607L13.792 12l3.394 3.393 3.829-2.175c1.096-.623 1.096-1.638 0-2.26L17.186 8.607z"
+                  fill="#ffeb3b" />
+                <path d="M3.61 1.814l10.182 10.186 3.394-3.393L6.87 2.766c-.958-.545-2.073-.623-3.26-.952z"
+                  fill="#00e676" />
+                <path d="M17.186 15.393L13.792 12 3.61 22.186c1.187-.329 2.302-.407 3.26-.952l10.316-5.841z"
+                  fill="#ff1744" />
+              </svg>
+              <div class="playstore-text">
+                <span class="playstore-tag">Próximamente en</span>
+                <span class="playstore-name">Google Play</span>
+              </div>
+            </button>
+
+            <a href="#donaciones" class="btn-secondary-hero">
+              <span>☕ Apoyar Proyecto</span>
+            </a>
+          </div>
+
+          <div class="hero-badges-list">
+            <div class="hero-badge-item">
+              <span class="badge-emoji">🚫</span>
+              <span>100% Sin Publicidad</span>
+            </div>
+            <div class="hero-badge-item">
+              <span class="badge-emoji">🔒</span>
+              <span>Sin Crear Cuentas</span>
+            </div>
+            <div class="hero-badge-item">
+              <span class="badge-emoji">🧩</span>
+              <span>Pictogramas ARASAAC</span>
+            </div>
+            <div class="hero-badge-item">
+              <span class="badge-emoji">🎙️</span>
+              <span>Voz y Trazos Táctiles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper">
+          <div class="hero-banner-card">
+            <!-- LCP Image: fetchpriority high, no lazy loading -->
+            <img src="assets/images/banner-collage.png" alt="Muestra de actividades de la app Mi Montessori"
+              class="hero-banner-img" fetchpriority="high" width="800" height="400">
+            <div class="floating-tag tag-top-left">
+              <span>🐝 Método Montessori</span>
+            </div>
+            <div class="floating-tag tag-bottom-right">
+              <span>✨ Lectoescritura Fácil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FILOSOFÍA & METODOLOGÍA
+         ========================================================================== -->
+    <section class="section-padding" id="metodologia">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag tag-purple">Metodología Educativa</span>
+          <h2 class="section-title">Aprender a través de la exploración, el sonido y la práctica</h2>
+          <p class="section-subtitle">
+            Inspirada en el respeto por los ritmos individuales y en el aprendizaje activo: el niño interactúa, escucha,
+            traza y autoevalúa su propio progreso en un ambiente seguro.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Tarjeta 1 -->
+          <article class="feature-card">
+            <div class="feature-icon-box" style="background: var(--primary-light); color: var(--primary-dark);">
+              🧩
+            </div>
+            <h3 class="feature-title">Pictogramas de ARASAAC</h3>
+            <p class="feature-text">
+              Utilizamos símbolos gráficos de comunicación aumentativa que fortalecen la relación visual entre la
+              imagen, el objeto real y la palabra escrita.
+            </p>
+            <ul class="feature-bullet-list">
+              <li class="feature-bullet-item">Asociación directa imagen-palabra</li>
+              <li class="feature-bullet-item">Comprensión lectora intuitiva</li>
+              <li class="feature-bullet-item">Almacenamiento local para uso sin conexión</li>
+            </ul>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="feature-card">
+            <div class="feature-icon-box" style="background: var(--accent-yellow-light); color: #b78103;">
+              🎧
+            </div>
+            <h3 class="feature-title">Experiencia Fonética & Voz</h3>
+            <p class="feature-text">
+              Los niños escuchan la pronunciación limpia de cada sílaba y frase con síntesis de voz, y pueden participar
+              en actividades de reconocimiento de voz con el micrófono.
+            </p>
+            <ul class="feature-bullet-list">
+              <li class="feature-bullet-item">Audio claro y natural en español</li>
+              <li class="feature-bullet-item">Práctica activa de pronunciación</li>
+              <li class="feature-bullet-item">Retroalimentación fonológica inmediata</li>
+            </ul>
+          </article>
+
+          <!-- Tarjeta 3 -->
+          <article class="feature-card">
+            <div class="feature-icon-box" style="background: var(--accent-pink-light); color: #c2185b;">
+              ✍️
+            </div>
+            <h3 class="feature-title">Grafomotricidad y Trazos</h3>
+            <p class="feature-text">
+              Antes de mecanizar la escritura, los pequeños practican el trazo a mano alzada en la pantalla, recibiendo
+              asistencia interactiva para reconocer la forma de cada letra.
+            </p>
+            <ul class="feature-bullet-list">
+              <li class="feature-bullet-item">Trazado guiado en pantalla</li>
+              <li class="feature-bullet-item">Alternancia entre mayúsculas y minúsculas</li>
+              <li class="feature-bullet-item">Coordinación óculo-manual reforzada</li>
+            </ul>
+          </article>
+
+          <!-- Tarjeta 4 -->
+          <article class="feature-card">
+            <div class="feature-icon-box" style="background: var(--accent-green-light); color: var(--accent-green);">
+              🛡️
+            </div>
+            <h3 class="feature-title">Concentración sin Distracciones</h3>
+            <p class="feature-text">
+              Diseño limpio y amigable sin anuncios publicitarios, sin compras imprevistas y sin crear cuentas. Un
+              espacio seguro dedicado 100% a la concentración del pequeño.
+            </p>
+            <ul class="feature-bullet-list">
+              <li class="feature-bullet-item">Cero publicidad invasiva</li>
+              <li class="feature-bullet-item">Sin recolectar datos personales</li>
+              <li class="feature-bullet-item">Interfaz tranquila y predecible</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SHOWCASE INTERACTIVO (TELÉFONO + ACTIVIDADES)
+         ========================================================================== -->
+    <section class="section-padding showcase-section" id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag tag-blue">Explora la Aplicación</span>
+          <h2 class="section-title">Todas las áreas diseñadas para una progresión natural</h2>
+          <p class="section-subtitle">
+            Haz clic en cualquiera de las actividades para ver cómo funciona en la pantalla del dispositivo.
+          </p>
+        </div>
+
+        <div class="showcase-layout">
+          <!-- Menú interactivo de selección de pantalla -->
+          <div class="activities-nav" role="tablist" aria-label="Selector de actividades de la app">
+
+            <button type="button" class="activity-tab-btn active" data-activity="menu" role="tab" aria-selected="true">
+              <div class="tab-icon" style="background: var(--accent-yellow-light); color: #b78103;">🐝</div>
+              <div class="tab-content-text">
+                <h4>Menú Principal de la App</h4>
+                <p>Navegación visual con la abejita mascota y las 6 áreas de aprendizaje.</p>
+              </div>
+            </button>
+
+            <button type="button" class="activity-tab-btn" data-activity="silabas" role="tab" aria-selected="false">
+              <div class="tab-icon" style="background: var(--primary-light); color: var(--primary-dark);">🔤</div>
+              <div class="tab-content-text">
+                <h4>Aprende Sílabas y Palabras</h4>
+                <p>Asociación gráfica de la sílaba MA con Mamá, Mapa, Mariposa y Manzana.</p>
+              </div>
+            </button>
+
+            <button type="button" class="activity-tab-btn" data-activity="aprende-letras" role="tab"
+              aria-selected="false">
+              <div class="tab-icon" style="background: #e0f2f1; color: #00796b;">🐬</div>
+              <div class="tab-content-text">
+                <h4>Aprende Letras con Pictogramas</h4>
+                <p>Identificación de fonemas: letra D con Delfín, Dado, Diente y Dedo.</p>
+              </div>
+            </button>
+
+            <button type="button" class="activity-tab-btn" data-activity="completa-silaba" role="tab"
+              aria-selected="false">
+              <div class="tab-icon" style="background: var(--secondary-light); color: var(--secondary-dark);">🔲</div>
+              <div class="tab-content-text">
+                <h4>Completa por Sílaba</h4>
+                <p>Arrastra las fichas de sílabas a las casillas correspondientes.</p>
+              </div>
+            </button>
+
+            <button type="button" class="activity-tab-btn" data-activity="completa-letra" role="tab"
+              aria-selected="false">
+              <div class="tab-icon" style="background: var(--accent-pink-light); color: #c2185b;">🅰️</div>
+              <div class="tab-content-text">
+                <h4>Completa la Letra</h4>
+                <p>Identifica la vocal o consonante faltante para completar la palabra.</p>
+              </div>
+            </button>
+
+            <button type="button" class="activity-tab-btn" data-activity="selecciona-palabra" role="tab"
+              aria-selected="false">
+              <div class="tab-icon" style="background: var(--accent-yellow-light); color: #b78103;">🎯</div>
+              <div class="tab-content-text">
+                <h4>Selecciona la Palabra Correcta</h4>
+                <p>Discriminación visual entre varias opciones para asociar con la imagen.</p>
+              </div>
+            </button>
+
+            <button type="button" class="activity-tab-btn" data-activity="selecciona-silaba" role="tab"
+              aria-selected="false">
+              <div class="tab-icon" style="background: var(--accent-green-light); color: var(--accent-green);">🍎</div>
+              <div class="tab-content-text">
+                <h4>Selecciona la Sílaba</h4>
+                <p>Elige la sílaba inicial correspondiente al pictograma.</p>
+              </div>
+            </button>
+
+            <button type="button" class="activity-tab-btn" data-activity="conecta-palabras" role="tab"
+              aria-selected="false">
+              <div class="tab-icon" style="background: var(--accent-orange-light); color: var(--accent-orange);">↔️
+              </div>
+              <div class="tab-content-text">
+                <h4>Conecta Palabras con Líneas</h4>
+                <p>Relaciona conceptos escritos con sus respectivas ilustraciones.</p>
+              </div>
+            </button>
+
+            <button type="button" class="activity-tab-btn" data-activity="reconocimiento-voz" role="tab"
+              aria-selected="false">
+              <div class="tab-icon" style="background: #e1f5fe; color: #0288d1;">🎙️</div>
+              <div class="tab-content-text">
+                <h4>Lectura y Reconocimiento de Voz</h4>
+                <p>Pronunciación guiada con síntesis de voz y validación por micrófono.</p>
+              </div>
+            </button>
+
+            <button type="button" class="activity-tab-btn" data-activity="oraciones" role="tab" aria-selected="false">
+              <div class="tab-icon" style="background: #e8eaf6; color: #3949ab;">📖</div>
+              <div class="tab-content-text">
+                <h4>Aprende y Lee Oraciones</h4>
+                <p>Comprensión lectora de oraciones guiadas por pictogramas (ej. EL NIÑO SALTA).</p>
+              </div>
+            </button>
+
+            <button type="button" class="activity-tab-btn" data-activity="trazos-letra" role="tab"
+              aria-selected="false">
+              <div class="tab-icon" style="background: #f3e5f5; color: #7b1fa2;">✏️</div>
+              <div class="tab-content-text">
+                <h4>Práctica de Trazos y Escritura</h4>
+                <p>Dibuja el trazo de cada letra directamente sobre la pantalla.</p>
+              </div>
+            </button>
+
+          </div>
+
+          <!-- Mockup de Smartphone con la pantalla activa -->
+          <div class="mockup-container">
+            <div class="phone-frame">
+              <div class="phone-notch">
+                <div class="phone-speaker"></div>
+                <div class="phone-camera"></div>
+              </div>
+              <div class="phone-screen">
+                <img id="mockup-display-img" src="assets/images/screen-menu-principal.png"
+                  alt="Menú principal de la aplicación Mi Montessori" class="phone-screen-img" loading="lazy"
+                  width="240" height="490">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ÁREAS DETALLADAS DE LA APP
+         ========================================================================== -->
+    <section class="section-padding" id="areas">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag tag-yellow">Contenido Estructurado</span>
+          <h2 class="section-title">Qué aprenderán los niños con Mi Montessori</h2>
+          <p class="section-subtitle">
+            Un itinerario pedagógico diseñado para construir bases sólidas en la comprensión y expresión del lenguaje.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 class="feature-title">🔤 Letras y Vocales</h3>
+            <p class="feature-text">
+              Descubrimiento del abecedario, discriminando el sonido fonético y la forma gráfica tanto en minúsculas
+              como en mayúsculas.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="feature-title">🧩 Sílabas y Palabras</h3>
+            <p class="feature-text">
+              Aprende cómo las letras se combinan para formar sílabas (MA, ME, MI, MO, MU) y cómo estas dan vida a
+              palabras familiares.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="feature-title">📖 Lectura de Frases Sencillas</h3>
+            <p class="feature-text">
+              Estructuras oracionales breves con apoyo visual de pictogramas para dar el salto desde la palabra aislada
+              a la comprensión del texto.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="feature-title">🔄 Relacionar e Identificar</h3>
+            <p class="feature-text">
+              Ejercicios dinámicos de conexión: une letras, sílabas e imágenes para fortalecer la memoria visual y el
+              pensamiento lógico.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="feature-title">🎯 Completar Letras y Sílabas</h3>
+            <p class="feature-text">
+              Juegos de arrastrar fichas a casillas vacías con autocorrección inmediata, fomentando la autonomía sin
+              frustración.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="feature-title">🎙️ Audio, Voz y Síntesis</h3>
+            <p class="feature-text">
+              Escucha palabras nítidas y utiliza el micrófono del teléfono para comprobar la pronunciación y lectura en
+              voz alta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ¿PARA QUIÉN ESTÁ DIRIGIDA?
+         ========================================================================== -->
+    <section class="section-padding" style="background: white;" id="para-quien">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag tag-pink">Comunidad Educativa</span>
+          <h2 class="section-title">¿Para quién está pensada esta herramienta?</h2>
+          <p class="section-subtitle">
+            Creada con empatía pedagógica para apoyar diferentes contextos de aprendizaje y desarrollo.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="audience-emoji-bubble" style="background: var(--primary-light);">
+              🧒
+            </div>
+            <h3 class="audience-title">Niños y Niñas</h3>
+            <p class="audience-text">
+              Pequeños que están comenzando a familiarizarse con la lectura y la escritura, aprendiendo a su propio
+              ritmo sin presiones ni comparaciones.
+            </p>
+          </div>
+
+          <div class="audience-card">
+            <div class="audience-emoji-bubble" style="background: var(--accent-yellow-light);">
+              👨‍👩‍👧
+            </div>
+            <h3 class="audience-title">Familias y Hogares</h3>
+            <p class="audience-text">
+              Padres y madres que buscan tiempo de pantalla saludable, con una aplicación transparente, educativa y
+              totalmente libre de publicidad.
+            </p>
+          </div>
+
+          <div class="audience-card">
+            <div class="audience-emoji-bubble" style="background: var(--secondary-light);">
+              👩‍🏫
+            </div>
+            <h3 class="audience-title">Docentes y Guías</h3>
+            <p class="audience-text">
+              Educadores infantiles que desean un recurso digital interactivo que complemente las actividades del aula y
+              el ambiente preparado.
+            </p>
+          </div>
+
+          <div class="audience-card">
+            <div class="audience-emoji-bubble" style="background: var(--accent-green-light);">
+              🧩
+            </div>
+            <h3 class="audience-title">Educación Inclusiva</h3>
+            <p class="audience-text">
+              Acompañantes y terapeutas que aprovechan el poder de los pictogramas de ARASAAC para reforzar la
+              comunicación y la asociación de conceptos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRIVACIDAD, SEGURIDAD & REQUISITOS TÉCNICOS
+         ========================================================================== -->
+    <section class="section-padding security-section" id="privacidad">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag tag-blue">Seguridad y Confianza</span>
+          <h2 class="section-title">Compromiso total con la privacidad de los niños</h2>
+          <p class="section-subtitle">
+            Creemos que la tecnología infantil debe ser transparente, ética y enfocada exclusivamente en el aprendizaje.
+          </p>
+        </div>
+
+        <div class="security-grid">
+          <div class="security-card">
+            <div class="security-icon">🚫</div>
+            <div class="security-content">
+              <h4>Sin Publicidad</h4>
+              <p>No mostramos anuncios de terceros, banners ni videos invasivos. Ningún distractor entre el niño y su
+                aprendizaje.</p>
+            </div>
+          </div>
+
+          <div class="security-card">
+            <div class="security-icon">🔒</div>
+            <div class="security-content">
+              <h4>Sin Crear Cuentas</h4>
+              <p>No se solicitan correos, nombres ni contraseñas. Instala y empieza a explorar de forma directa.</p>
+            </div>
+          </div>
+
+          <div class="security-card">
+            <div class="security-icon">🎙️</div>
+            <div class="security-content">
+              <h4>Uso del Micrófono</h4>
+              <p>El permiso de micrófono se utiliza únicamente durante las actividades interactivas de reconocimiento de
+                voz.</p>
+            </div>
+          </div>
+
+          <div class="security-card">
+            <div class="security-icon">📶</div>
+            <div class="security-content">
+              <h4>Descarga y Uso Local</h4>
+              <p>Los pictogramas de ARASAAC se descargan y se guardan localmente en el dispositivo para reutilizarlos
+                incluso sin internet.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Descargo pedagógico -->
+        <div class="disclaimer-box">
+          <span style="font-size: 1.6rem;">ℹ️</span>
+          <p>
+            <strong>Aviso importante:</strong> La aplicación <em>Mi Montessori</em> es una herramienta educativa de
+            apoyo y estimulación para el aprendizaje. <strong>No es un dispositivo médico, diagnóstico ni
+              terapéutico</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         APOYO Y DONACIONES (PAYPAL & PAGO MÓVIL)
+         ========================================================================== -->
+    <section class="section-padding donation-section" id="donaciones">
+      <div class="container donation-wrapper">
+        <div class="donation-intro-card">
+          <img src="assets/images/app-icon.png" alt="Abeja Mi Montessori" class="donation-bee-icon" width="76"
+            height="76">
+          <span class="section-tag tag-purple">Proyecto Independiente</span>
+          <h2 class="section-title">Apoya el desarrollo de Mi Montessori</h2>
+          <p class="section-subtitle" style="margin-bottom: 0;">
+            Mi Montessori es un proyecto independiente desarrollado con dedicación para ofrecer educación abierta, de
+            calidad y <strong>100% sin publicidad</strong>. Tu apoyo nos ayuda a seguir desarrollando nuevas
+            actividades, manteniendo la app totalmente gratuita y sin publicidad.
+          </p>
+        </div>
+
+        <div class="donation-options-grid">
+          <!-- Opción 1: PayPal -->
+          <div class="donation-card">
+            <div>
+              <div class="donation-card-header">
+                <span class="donation-logo-icon">💳</span>
+                <h3>Donación vía PayPal</h3>
+              </div>
+              <p>
+                Aporta de forma segura desde cualquier país utilizando tarjeta de crédito, débito o tu saldo en PayPal.
+              </p>
+            </div>
+
+            <!-- Enlace de donación PayPal -->
+            <a href="https://paypal.me/Alexgaby18" target="_blank" rel="noopener noreferrer" class="btn-paypal"
+              id="paypal-link">
+              <svg class="paypal-svg" viewBox="0 0 24 24">
+                <path
+                  d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.72a.784.784 0 0 1 .773-.655h7.625c3.084 0 5.485 1.547 5.093 5.34-.34 3.284-2.22 5.076-5.114 5.076H9.79l-1.39 7.23a.641.641 0 0 1-.632.553l-.692.073z" />
+              </svg>
+              <span>Donar con PayPal</span>
+            </a>
+          </div>
+
+          <!-- Opción 2: Pago Móvil (Venezuela) -->
+          <div class="donation-card">
+            <div>
+              <div class="donation-card-header">
+                <span class="donation-logo-icon">📱</span>
+                <h3>Donación vía Pago Móvil</h3>
+              </div>
+              <p>
+                Si te encuentras en Venezuela, puedes apoyar el proyecto mediante transferencia directa de Pago Móvil:
+              </p>
+
+              <!-- DATOS DE PAGO MÓVIL (Editables) -->
+              <div class="pagomovil-details">
+                <div class="pm-field">
+                  <span class="pm-label">Banco:</span>
+                  <span class="pm-value" id="pm-banco">Banco de Venezuela (0102)</span>
+                </div>
+                <div class="pm-field">
+                  <span class="pm-label">Teléfono:</span>
+                  <span class="pm-value" id="pm-telefono">0424-8235390</span>
+                </div>
+                <div class="pm-field">
+                  <span class="pm-label">Cédula:</span>
+                  <span class="pm-value" id="pm-cedula">V-30399164</span>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-copy-pm" id="btn-copy-pm">
+              <span>📋 Copiar Datos de Pago Móvil</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CALL TO ACTION FINAL (PRE-REGISTRO GOOGLE PLAY)
+         ========================================================================== -->
+    <section class="final-cta-section">
+      <div class="container">
+        <h2 class="section-title">¡Sé el primero en saber cuándo esté disponible!</h2>
+        <p class="section-subtitle">
+          Estamos afinando los últimos detalles para la publicación oficial en Google Play Store. Déjanos tu correo y te
+          notificaremos el día del lanzamiento.
+        </p>
+
+        <div class="final-cta-box">
+          <form class="email-signup-form js-notify-form" data-source="footer">
+            <input type="email" name="email" class="email-input" placeholder="Tu correo electrónico (ej. familia@gmail.com)" required
+              aria-label="Correo electrónico para recibir aviso">
+            <button type="submit" class="btn-submit-signup">
+              ¡Avisarme del Lanzamiento! 🚀
+            </button>
+          </form>
+          <p class="signup-note">🔒 Respetamos tu privacidad. Solo te enviaremos un correo cuando la app esté lista en
+            la Play Store.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER & ATRIBUCIONES
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>
+            <img src="assets/images/app-icon.png" alt="Abeja" width="32" height="32">
+            Mi Montessori
+          </h4>
+          <p>
+            Herramienta educativa infantil en español diseñada para acompañar a los niños en sus primeros pasos de
+            lectura y escritura a través de la metodología Montessori.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navegación</h5>
+          <ul class="footer-links-list">
+            <li><a href="#metodologia" class="footer-link">Metodología</a></li>
+            <li><a href="#areas" class="footer-link">Áreas de la App</a></li>
+            <li><a href="#galeria" class="footer-link">Galería interactiva</a></li>
+            <li><a href="#para-quien" class="footer-link">¿Para quién es?</a></li>
+            <li><a href="#donaciones" class="footer-link">Apoyar el proyecto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Compromiso</h5>
+          <ul class="footer-links-list">
+            <li><a href="#privacidad" class="footer-link">Política de Privacidad</a></li>
+            <li><a href="#privacidad" class="footer-link">Permisos y Requisitos</a></li>
+            <li><a href="#privacidad" class="footer-link">Descargo Educativo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Atribución de ARASAAC conforme a licencia Creative Commons BY-NC-SA -->
+      <div class="arasaac-attribution-card">
+        <strong>Atribución de Pictogramas:</strong><br>
+        Los símbolos pictográficos utilizados en la aplicación y en esta presentación son propiedad del <strong>Gobierno
+          de Aragón</strong> y han sido creados por <strong>Sergio Palao</strong> para <strong>ARASAAC</strong> (<a
+          href="http://www.arasaac.org" target="_blank" rel="noopener noreferrer">http://www.arasaac.org</a>), que los
+        distribuye bajo <strong>Licencia Creative Commons BY-NC-SA</strong>.
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mi Montessori. Todos los derechos reservados. Desarrollado con dedicación para la educación
+          infantil.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DE NOTIFICACIÓN DE LANZAMIENTO
+       ========================================================================== -->
+  <dialog class="modal-backdrop" id="notify-modal" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar ventana">✕</button>
+      <img src="assets/images/app-icon.png" alt="Mi Montessori Abejita" class="modal-bee" width="64" height="64">
+      <h3 class="modal-title" id="modal-title">Próximamente en Google Play</h3>
+      <p class="modal-subtitle">
+        Déjanos tu correo y te enviaremos un enlace de descarga en cuanto <strong>Mi Montessori</strong> sea publicada
+        en la Play Store.
+      </p>
+
+      <form class="modal-form js-notify-form" data-source="modal">
+        <input type="email" name="email" class="modal-input" placeholder="Tu correo electrónico" required
+          aria-label="Ingresa tu correo">
+        <button type="submit" class="modal-btn-submit">¡Avisarme del Lanzamiento! 🎉</button>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Script interactivo -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
