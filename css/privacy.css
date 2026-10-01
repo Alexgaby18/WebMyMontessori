@@ -1,0 +1,721 @@
+/* ==========================================================================
+   MI MONTESSORI - ESTILOS DE POLÍTICA DE PRIVACIDAD
+   Inspirado en estándares corporativos de alta transparencia y Google Play Families
+   ========================================================================== */
+
+/* Hero de Privacidad */
+.privacy-hero {
+  background: linear-gradient(135deg, #e0f2fe 0%, #ede7f6 50%, #f0fdf4 100%);
+  padding: 60px 0 50px;
+  border-bottom: 1px solid rgba(41, 182, 246, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.privacy-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  right: -60px;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(149, 117, 205, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.privacy-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.privacy-breadcrumbs a {
+  color: var(--primary-dark);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: var(--transition);
+}
+
+.privacy-breadcrumbs a:hover {
+  text-decoration: underline;
+  color: var(--secondary-dark);
+}
+
+.privacy-hero-header {
+  max-width: 860px;
+}
+
+.privacy-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #15803d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  margin-bottom: 16px;
+}
+
+.privacy-status-pill .pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
+  animation: pulseGreen 2s infinite;
+}
+
+.privacy-hero-title {
+  font-size: clamp(2rem, 3.8vw, 2.75rem);
+  font-weight: 900;
+  color: var(--text-main);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.privacy-hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.privacy-meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meta-item strong {
+  color: var(--text-main);
+}
+
+.privacy-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-hero-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  color: var(--text-main);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+.btn-hero-action:hover {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.btn-hero-action.btn-primary-action {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.btn-hero-action.btn-primary-action:hover {
+  background: var(--primary-dark);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   RESUMEN EJECUTIVO (4 TARJETAS DESTACADAS)
+   ========================================================================== */
+.executive-summary-section {
+  padding: 36px 0 24px;
+}
+
+.summary-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.summary-card-item {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 22px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summary-card-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.summary-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.summary-card-item:nth-child(2) .summary-card-icon {
+  background: var(--secondary-light);
+  color: var(--secondary-dark);
+}
+
+.summary-card-item:nth-child(3) .summary-card-icon {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.summary-card-item:nth-child(4) .summary-card-icon {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.summary-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.summary-card-desc {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   LAYOUT PRINCIPAL (SIDEBAR ÍNDICE + CONTENIDO LEGAL)
+   ========================================================================== */
+.privacy-main-wrapper {
+  padding: 40px 0 80px;
+}
+
+.privacy-layout-grid {
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Sidebar Índice */
+.privacy-sidebar {
+  position: sticky;
+  top: 96px;
+  align-self: start;
+  z-index: 10;
+}
+
+.sidebar-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input-wrap {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.search-input-wrap input {
+  width: 100%;
+  padding: 10px 14px 10px 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--bg-page);
+  font-size: 0.86rem;
+  color: var(--text-main);
+  outline: none;
+  transition: var(--transition);
+}
+
+.search-input-wrap input:focus {
+  border-color: var(--primary);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(41, 182, 246, 0.15);
+}
+
+.search-input-wrap .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 48vh;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.toc-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.toc-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.toc-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.toc-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  background: var(--bg-page);
+  color: var(--text-muted);
+  border-radius: 4px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+}
+
+.toc-link:hover {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.toc-link.active {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  font-weight: 800;
+  border-left: 3px solid var(--primary);
+}
+
+.toc-link.active .toc-badge {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+/* ==========================================================================
+   DOCUMENTO LEGAL (ARTÍCULOS Y CLÁUSULAS)
+   ========================================================================== */
+.privacy-document {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  min-width: 0;
+}
+
+.privacy-article {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+  transition: var(--transition);
+  scroll-margin-top: 100px;
+}
+
+.privacy-article:hover {
+  border-color: rgba(41, 182, 246, 0.4);
+}
+
+.article-header {
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 18px;
+}
+
+.article-tag {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary-dark);
+  background: var(--primary-light);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.article-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 1.3;
+}
+
+.article-icon {
+  font-size: 1.5rem;
+}
+
+.article-body {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.article-body p {
+  margin-bottom: 16px;
+}
+
+.article-body p:last-child {
+  margin-bottom: 0;
+}
+
+.article-body ul, .article-body ol {
+  margin: 14px 0 20px 24px;
+}
+
+.article-body li {
+  margin-bottom: 10px;
+  line-height: 1.65;
+}
+
+.article-body strong {
+  color: var(--text-main);
+}
+
+.article-subtitle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 24px 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Callouts y Cajas Informativas */
+.legal-callout {
+  background: #f0fdf4;
+  border-left: 5px solid #22c55e;
+  padding: 18px 22px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 20px 0;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.legal-callout.warning {
+  background: #fffbeb;
+  border-left-color: #f59e0b;
+}
+
+.legal-callout.info {
+  background: var(--primary-light);
+  border-left-color: var(--primary);
+}
+
+.callout-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.callout-text {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+/* Tablas Legales */
+.legal-table-wrapper {
+  overflow-x: auto;
+  margin: 24px 0;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.legal-table th {
+  background: #f8fafc;
+  padding: 14px 18px;
+  font-weight: 800;
+  color: var(--text-main);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.legal-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-color);
+  color: #475569;
+  vertical-align: top;
+  line-height: 1.55;
+}
+
+.legal-table tr:last-child td {
+  border-bottom: none;
+}
+
+.legal-table tr:hover td {
+  background: #f8fafc;
+}
+
+.badge-forbidden {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #fee2e2;
+  color: #991b1b;
+  font-weight: 700;
+  font-size: 0.76rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.badge-allowed {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #dcfce7;
+  color: #166534;
+  font-weight: 700;
+  font-size: 0.76rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+/* Tarjeta de Firma / Contacto Formal */
+.signature-card {
+  background: linear-gradient(135deg, #f8fbfe 0%, #f1f5f9 100%);
+  border: 2px dashed rgba(41, 182, 246, 0.4);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.signature-info h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.signature-info p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.signature-email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.signature-email-btn:hover {
+  background: var(--primary-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Botón flotante Volver Arriba */
+.btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(2, 136, 209, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 90;
+}
+
+.btn-back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-back-to-top:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   ESTILOS DE IMPRESIÓN (PRINT FRIENDLY / PDF EXPORT)
+   ========================================================================== */
+@media print {
+  .site-header,
+  .privacy-hero-actions,
+  .privacy-sidebar,
+  .btn-back-to-top,
+  .final-cta-section,
+  .site-footer,
+  .search-input-wrap {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  .privacy-hero {
+    background: transparent !important;
+    border-bottom: 2px solid #000000;
+    padding: 0 0 20px 0 !important;
+  }
+
+  .privacy-layout-grid {
+    display: block !important;
+  }
+
+  .privacy-article {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 20px 0 !important;
+    page-break-inside: avoid;
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
+
+  .legal-callout {
+    border-left: 3px solid #000000 !important;
+    background: #f8fafc !important;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 960px) {
+  .privacy-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .privacy-sidebar {
+    position: static;
+    max-height: none;
+  }
+
+  .toc-list {
+    max-height: 240px;
+  }
+
+  .privacy-article {
+    padding: 26px 20px;
+  }
+
+  .article-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .privacy-hero {
+    padding: 40px 0 30px;
+  }
+
+  .privacy-meta-strip {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .signature-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .signature-email-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
