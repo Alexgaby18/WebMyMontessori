@@ -622,6 +622,7 @@ button, input {
   gap: 8px;
   max-height: 490px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding-right: 8px;
   scrollbar-width: thin;
   scrollbar-color: #b3e5fc transparent;
@@ -1525,11 +1526,13 @@ button, input {
   
   .showcase-layout {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 36px;
   }
   
   .mockup-container {
     order: -1;
+    position: static;
+    top: auto;
   }
   
   .donation-options-grid {
