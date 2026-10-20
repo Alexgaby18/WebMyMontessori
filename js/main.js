@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (modal && modal.open) {
           modal.close();
         }
-        showToast('¡Gracias! Tu correo ha sido registrado para el lanzamiento 🎉');
+        showToast('¡Gracias! Te avisaremos de novedades y futuras actualizaciones 🎉');
         if (emailInput) emailInput.value = '';
       } catch (err) {
         showToast('Hubo un inconveniente al registrarte. Por favor intenta de nuevo.');

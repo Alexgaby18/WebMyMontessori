@@ -214,12 +214,18 @@ button, input {
   gap: 8px;
   box-shadow: var(--shadow-button);
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .btn-header-play:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(2, 136, 209, 0.4);
+  color: white;
+}
+
+.btn-header-play .nav-play-svg {
+  flex-shrink: 0;
 }
 
 /* Mobile Nav Toggle */
@@ -270,6 +276,32 @@ button, input {
   height: 22px;
 }
 
+.badge-live-pulse {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse-green 1.8s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
 .hero-title {
   font-size: clamp(2.3rem, 4.2vw, 3.4rem);
   font-weight: 900;
@@ -318,12 +350,29 @@ button, input {
   transition: var(--transition);
   border: 1px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .playstore-badge-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
   background: #000000;
+  color: #ffffff;
+}
+
+.playstore-badge-lg {
+  padding: 16px 32px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.3);
+}
+
+.playstore-badge-lg .playstore-icon {
+  width: 38px;
+  height: 38px;
+}
+
+.playstore-badge-lg .playstore-name {
+  font-size: 1.25rem;
 }
 
 .playstore-icon {
@@ -1217,7 +1266,7 @@ button, input {
 }
 
 /* ==========================================================================
-   CALL TO ACTION FINAL (PRE-REGISTRO GOOGLE PLAY)
+   CALL TO ACTION FINAL (DESCARGA GOOGLE PLAY)
    ========================================================================== */
 .final-cta-section {
   position: relative;
@@ -1228,14 +1277,32 @@ button, input {
   overflow: hidden;
 }
 
+.final-cta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 8px 22px;
+  border-radius: var(--radius-full);
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 .final-cta-section .section-title {
   color: white;
 }
 
 .final-cta-section .section-subtitle {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   max-width: 650px;
   margin: 0 auto 36px;
+  font-size: 1.15rem;
 }
 
 .final-cta-box {
@@ -1249,11 +1316,54 @@ button, input {
   margin: 0 auto;
 }
 
+.final-cta-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.final-cta-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 24px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 28px;
+}
+
+.cta-feature-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cta-feature-icon {
+  font-size: 1.1rem;
+}
+
+.newsletter-subbox {
+  background: rgba(0, 0, 0, 0.14);
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+}
+
+.newsletter-subbox-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
 .email-signup-form {
   display: flex;
   gap: 12px;
   max-width: 500px;
-  margin: 0 auto 16px;
+  margin: 0 auto 12px;
 }
 
 .email-input {
@@ -1287,7 +1397,17 @@ button, input {
 
 .signup-note {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-play-link {
+  color: #38bdf8 !important;
+  font-weight: 800 !important;
+}
+
+.footer-play-link:hover {
+  text-decoration: underline !important;
+  color: #7dd3fc !important;
 }
 
 /* ==========================================================================

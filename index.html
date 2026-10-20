@@ -57,10 +57,22 @@
       </nav>
 
       <div class="nav-actions">
-        <button type="button" class="btn-header-play js-open-notify-modal"
-          aria-label="Avisarme del lanzamiento en Google Play">
-          <span>Próximamente en Google Play</span>
-        </button>
+        <a href="https://play.google.com/store/apps/details?id=educational.app.my_montessori&pcampaignid=web_share"
+          target="_blank" rel="noopener noreferrer" class="btn-header-play"
+          aria-label="Descargar Mi Montessori en Google Play">
+          <svg class="nav-play-svg" viewBox="0 0 24 24" width="18" height="18" fill="none"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186c-.368-.383-.61-.95-.61-1.635V3.45c0-.686.242-1.253.61-1.636z"
+              fill="#00e5ff" />
+            <path d="M17.186 8.607L13.792 12l3.394 3.393 3.829-2.175c1.096-.623 1.096-1.638 0-2.26L17.186 8.607z"
+              fill="#ffeb3b" />
+            <path d="M3.61 1.814l10.182 10.186 3.394-3.393L6.87 2.766c-.958-.545-2.073-.623-3.26-.952z"
+              fill="#00e676" />
+            <path d="M17.186 15.393L13.792 12 3.61 22.186c1.187-.329 2.302-.407 3.26-.952l10.316-5.841z"
+              fill="#ff1744" />
+          </svg>
+          <span>Descargar en Google Play</span>
+        </a>
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú de navegación">
           ☰
         </button>
@@ -76,8 +88,8 @@
       <div class="container hero-grid">
         <div class="hero-content">
           <div class="hero-pill">
-            <img src="assets/images/app-icon.png" alt="Abejita" width="22" height="22">
-            <span>Aprendizaje temprano respetuoso y autónomo</span>
+            <span class="badge-live-pulse" aria-hidden="true"></span>
+            <span>¡Ya Disponible en Google Play! &middot; Lectoescritura Infantil</span>
           </div>
 
           <h1 class="hero-title">
@@ -92,10 +104,12 @@
           </p>
 
           <div class="hero-ctas">
-            <!-- Botón estilo Google Play Store -->
-            <button type="button" class="playstore-badge-btn js-open-notify-modal"
-              aria-label="Pre-registro en Google Play Store">
-              <svg class="playstore-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Botón oficial Google Play Store -->
+            <a href="https://play.google.com/store/apps/details?id=educational.app.my_montessori&pcampaignid=web_share"
+              target="_blank" rel="noopener noreferrer" class="playstore-badge-btn"
+              aria-label="Descargar Mi Montessori gratis en Google Play Store">
+              <svg class="playstore-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
                 <path
                   d="M3.609 1.814L13.792 12 3.61 22.186c-.368-.383-.61-.95-.61-1.635V3.45c0-.686.242-1.253.61-1.636z"
                   fill="#00e5ff" />
@@ -107,13 +121,21 @@
                   fill="#ff1744" />
               </svg>
               <div class="playstore-text">
-                <span class="playstore-tag">Próximamente en</span>
+                <span class="playstore-tag">DISPONIBLE AHORA EN</span>
                 <span class="playstore-name">Google Play</span>
               </div>
-            </button>
+            </a>
+
+            <a href="#galeria" class="btn-secondary-hero" aria-label="Ver capturas interactivas de la aplicación">
+              <span>Ver Actividades 📱</span>
+            </a>
           </div>
 
           <div class="hero-badges-list">
+            <div class="hero-badge-item">
+              <span class="badge-emoji">⭐</span>
+              <span>Descarga Gratuita</span>
+            </div>
             <div class="hero-badge-item">
               <span class="badge-emoji">🚫</span>
               <span>100% Sin Publicidad</span>
@@ -586,26 +608,74 @@
     </section>
 
     <!-- ==========================================================================
-         CALL TO ACTION FINAL (PRE-REGISTRO GOOGLE PLAY)
+         CALL TO ACTION FINAL (DESCARGA GOOGLE PLAY)
          ========================================================================== -->
-    <section class="final-cta-section">
+    <section class="final-cta-section" id="descargar">
       <div class="container">
-        <h2 class="section-title">¡Sé el primero en saber cuándo esté disponible!</h2>
+        <div class="final-cta-pill">
+          <span>🎉 ¡Lanzamiento Oficial en Android!</span>
+        </div>
+        <h2 class="section-title">¡Descarga Mi Montessori y comienza hoy mismo!</h2>
         <p class="section-subtitle">
-          Estamos afinando los últimos detalles para la publicación oficial en Google Play Store. Déjanos tu correo y te
-          notificaremos el día del lanzamiento.
+          La aplicación ya se encuentra disponible para celulares y tablets en Google Play Store. Disfruta de una
+          experiencia educativa completa, libre de distracciones y con la pedagogía respetuosa que tu hijo o hija
+          merece.
         </p>
 
         <div class="final-cta-box">
-          <form class="email-signup-form js-notify-form" data-source="footer">
-            <input type="email" name="email" class="email-input" placeholder="Tu correo electrónico" required
-              aria-label="Correo electrónico para recibir aviso">
-            <button type="submit" class="btn-submit-signup">
-              ¡Avisarme del Lanzamiento! 🚀
-            </button>
-          </form>
-          <p class="signup-note">🔒 Respetamos tu privacidad. Solo te enviaremos un correo cuando la app esté lista en
-            la Play Store.</p>
+          <div class="final-cta-actions">
+            <a href="https://play.google.com/store/apps/details?id=educational.app.my_montessori&pcampaignid=web_share"
+              target="_blank" rel="noopener noreferrer" class="playstore-badge-btn playstore-badge-lg"
+              aria-label="Descargar Mi Montessori en Google Play Store">
+              <svg class="playstore-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path
+                  d="M3.609 1.814L13.792 12 3.61 22.186c-.368-.383-.61-.95-.61-1.635V3.45c0-.686.242-1.253.61-1.636z"
+                  fill="#00e5ff" />
+                <path d="M17.186 8.607L13.792 12l3.394 3.393 3.829-2.175c1.096-.623 1.096-1.638 0-2.26L17.186 8.607z"
+                  fill="#ffeb3b" />
+                <path d="M3.61 1.814l10.182 10.186 3.394-3.393L6.87 2.766c-.958-.545-2.073-.623-3.26-.952z"
+                  fill="#00e676" />
+                <path d="M17.186 15.393L13.792 12 3.61 22.186c1.187-.329 2.302-.407 3.26-.952l10.316-5.841z"
+                  fill="#ff1744" />
+              </svg>
+              <div class="playstore-text">
+                <span class="playstore-tag">DISPONIBLE AHORA EN</span>
+                <span class="playstore-name">Google Play</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="final-cta-features">
+            <div class="cta-feature-item">
+              <span class="cta-feature-icon">✨</span>
+              <span>100% Gratis y sin anuncios</span>
+            </div>
+            <div class="cta-feature-item">
+              <span class="cta-feature-icon">🛡️</span>
+              <span>Google Play Families</span>
+            </div>
+            <div class="cta-feature-item">
+              <span class="cta-feature-icon">📶</span>
+              <span>Uso sin conexión a internet</span>
+            </div>
+            <div class="cta-feature-item">
+              <span class="cta-feature-icon">📱</span>
+              <span>Compatible con Android 7.0+</span>
+            </div>
+          </div>
+
+          <div class="newsletter-subbox">
+            <p class="newsletter-subbox-title">¿Deseas recibir novedades y nuevas actividades pedagógicas?</p>
+            <form class="email-signup-form js-notify-form" data-source="footer">
+              <input type="email" name="email" class="email-input" placeholder="Tu correo electrónico" required
+                aria-label="Correo electrónico para recibir novedades">
+              <button type="submit" class="btn-submit-signup">
+                Suscribirme 📬
+              </button>
+            </form>
+            <p class="signup-note">🔒 Cero spam. Solo novedades importantes y actualizaciones de la aplicación.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -635,7 +705,11 @@
             <li><a href="#areas" class="footer-link">Áreas de la App</a></li>
             <li><a href="#galeria" class="footer-link">Galería interactiva</a></li>
             <li><a href="#para-quien" class="footer-link">¿Para quién es?</a></li>
-            <li><a href="#donaciones" class="footer-link">Apoyar el proyecto</a></li>
+            <li><a href="#descargar" class="footer-link">Descargar App</a></li>
+            <li><a
+                href="https://play.google.com/store/apps/details?id=educational.app.my_montessori&pcampaignid=web_share"
+                target="_blank" rel="noopener noreferrer" class="footer-link footer-play-link">Google Play Store 📲</a>
+            </li>
           </ul>
         </div>
 
@@ -670,23 +744,49 @@
   </footer>
 
   <!-- ==========================================================================
-       MODAL DE NOTIFICACIÓN DE LANZAMIENTO
+       MODAL DE INFORMACIÓN Y NOVEDADES
        ========================================================================== -->
   <dialog class="modal-backdrop" id="notify-modal" aria-labelledby="modal-title">
     <div class="modal-card">
       <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar ventana">✕</button>
       <img src="assets/images/app-icon.png" alt="Mi Montessori Abejita" class="modal-bee" width="64" height="64">
-      <h3 class="modal-title" id="modal-title">Próximamente en Google Play</h3>
+      <h3 class="modal-title" id="modal-title">¡Mi Montessori ya está disponible!</h3>
       <p class="modal-subtitle">
-        Déjanos tu correo y te enviaremos un enlace de descarga en cuanto <strong>Mi Montessori</strong> sea publicada
-        en la Play Store.
+        Descarga la aplicación oficial directamente en Google Play Store de manera gratuita y libre de publicidad.
       </p>
 
-      <form class="modal-form js-notify-form" data-source="modal">
-        <input type="email" name="email" class="modal-input" placeholder="Tu correo electrónico" required
-          aria-label="Ingresa tu correo">
-        <button type="submit" class="modal-btn-submit">¡Avisarme del Lanzamiento! 🎉</button>
-      </form>
+      <div style="margin-bottom: 24px; display: flex; justify-content: center;">
+        <a href="https://play.google.com/store/apps/details?id=educational.app.my_montessori&pcampaignid=web_share"
+          target="_blank" rel="noopener noreferrer" class="playstore-badge-btn"
+          aria-label="Descargar Mi Montessori en Google Play Store">
+          <svg class="playstore-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186c-.368-.383-.61-.95-.61-1.635V3.45c0-.686.242-1.253.61-1.636z"
+              fill="#00e5ff" />
+            <path d="M17.186 8.607L13.792 12l3.394 3.393 3.829-2.175c1.096-.623 1.096-1.638 0-2.26L17.186 8.607z"
+              fill="#ffeb3b" />
+            <path d="M3.61 1.814l10.182 10.186 3.394-3.393L6.87 2.766c-.958-.545-2.073-.623-3.26-.952z"
+              fill="#00e676" />
+            <path d="M17.186 15.393L13.792 12 3.61 22.186c1.187-.329 2.302-.407 3.26-.952l10.316-5.841z"
+              fill="#ff1744" />
+          </svg>
+          <div class="playstore-text">
+            <span class="playstore-tag">DESCARGAR EN</span>
+            <span class="playstore-name">Google Play</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="newsletter-subbox"
+        style="background: var(--bg-page); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 18px;">
+        <p class="newsletter-subbox-title" style="color: var(--text-main); font-size: 0.9rem; margin-bottom: 12px;">
+          ¿Quieres recibir avisos de nuevas actividades?</p>
+        <form class="modal-form js-notify-form" data-source="modal">
+          <input type="email" name="email" class="modal-input" placeholder="Tu correo para novedades" required
+            aria-label="Ingresa tu correo">
+          <button type="submit" class="modal-btn-submit">Recibir Novedades 💌</button>
+        </form>
+      </div>
     </div>
   </dialog>
 
